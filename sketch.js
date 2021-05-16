@@ -147,15 +147,4 @@ function mouseDragged()  {
 
 function mouseReleased()  {
   slingShot.fly()
-<<<<<<< HEAD
-=======
-}
-
-function keyPressed()  {
-  if(keyCode===32)  {
-    Matter.Body.setPosition(polygon.body,{x:150, y:200})
-    slingShot.attach(polygon.body);
-  }
-
->>>>>>> eb76d8281c1cfc7ef008adabc27d68c0451f559f
 }
