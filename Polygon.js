@@ -1,12 +1,14 @@
 class Polygon  {
     constructor(x,y,width,height)  {
         var options={
+            density: 10,
+            restitution: 0.04,
             isStatic:false
         }
         this.width = width
         this.height = height
         this.body = Bodies.rectangle(x,y,width,height,options)
-        this.image = loadImage("polygon.png")
+        this.image = loadImage("images/polygon.png")
 
         World.add(world,this.body)
 

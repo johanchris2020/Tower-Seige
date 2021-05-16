@@ -9,12 +9,10 @@ var stand1,stand2;
 var ball;
 var slingShot;
 var polygon_img;
-var block1, block2, block3, block4, block5, block6, block7, block8, block9, block10, block11, block13, block15
+var block1, block2, block3, block4, block5, block6, block7, block8, block9, block10, block11, block13, block15,
     block16, block17, block18, block19, block20, block21, block22, block23, block24, block25, block26, block27,
     block28, block29, block30, block31, block32;
-function preload(){
-  polygon_img=loadImage("polygon.png");
-}
+
 function setup() {
   createCanvas(900,400);
   engine = Engine.create();
@@ -149,4 +147,15 @@ function mouseDragged()  {
 
 function mouseReleased()  {
   slingShot.fly()
+<<<<<<< HEAD
+=======
+}
+
+function keyPressed()  {
+  if(keyCode===32)  {
+    Matter.Body.setPosition(polygon.body,{x:150, y:200})
+    slingShot.attach(polygon.body);
+  }
+
+>>>>>>> eb76d8281c1cfc7ef008adabc27d68c0451f559f
 }
